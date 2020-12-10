@@ -1,5 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
+import Images from './components/Docker/Images';
 import Header from './components/Header/Header';
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <Header />
+        <Images />
       </header>
     </div>
   );
