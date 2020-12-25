@@ -8,7 +8,7 @@ import configureStore from './store';
 
 const store = configureStore();
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <React.StrictMode>
     <Provider store={store}>
       <App />
