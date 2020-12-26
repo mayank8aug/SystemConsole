@@ -5,13 +5,16 @@ import './index.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import configureStore from './store';
+import { BrowserRouter as Router } from 'react-router-dom';
 
 const store = configureStore();
 
 ReactDOM.hydrate(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <Router>
+        <App />
+      </Router>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

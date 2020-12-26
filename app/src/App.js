@@ -1,15 +1,16 @@
 import React from 'react';
+import { Route } from 'react-router-dom';
 import './App.scss';
-import Images from './components/Docker/Images';
 import Header from './components/Header/Header';
+import Images from './components/Docker/Images';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Header />
-        <Images />
-      </header>
+    <div className="app">
+      <Header />
+      <div className="display-flex">
+        <Route path="/" exact component={Images} />
+      </div>
     </div>
   );
 }
