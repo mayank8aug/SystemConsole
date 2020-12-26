@@ -1,0 +1,14 @@
+{
+    "menu": [
+        {
+            "label": "DOCKER",
+            "url": "/docker/images",
+            "icon": "FaDocker"
+        },
+        {
+            "label": "KUBERNETES",
+            "url": "/k8s/pods",
+            "icon": "SiKubernetes"
+        }
+    ]
+}

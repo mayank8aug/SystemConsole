@@ -478,3 +478,23 @@
 .fst-i {
   font-style: italic; }
 
+.menu-item {
+  text-decoration: none; }
+  .menu-item:hover {
+    background: #ddd; }
+  .menu-item .tooltip {
+    position: absolute;
+    background: #ddd;
+    padding: 18px;
+    margin-top: -16px; }
+
+.nav-menu {
+  left: 0;
+  top: 60px;
+  height: calc(100vh - 60px);
+  box-shadow: 2px 3px 3px 2px #e5eef5;
+  transition: min-width 0.1s ease-out;
+  min-width: 240px; }
+  .nav-menu:not(.expanded) {
+    min-width: 0; }
+
