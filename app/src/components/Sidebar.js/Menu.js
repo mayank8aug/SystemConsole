@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import menus from '../../menu.json';
 import MenuItem from './MenuItem';
 import GitInfo from 'react-git-info/macro';
@@ -7,7 +8,7 @@ import './Menu.scss';
 const gitInfo = GitInfo();
 
 function Menu() {
-    const expanded = true;
+    const { expanded } = useSelector(state => state.nav);
     return (
         <div className={`display-flex flex-column justify-space-between nav-menu bg-secondary${expanded ? ' expanded' : ''}`}>
             <div className="overflow-y-auto">
